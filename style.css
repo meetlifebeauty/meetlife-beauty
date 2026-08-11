@@ -1,0 +1,528 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f8f6f1;
+  color: #20211f;
+}
+
+
+/* HEADER */
+
+.site-header {
+  height: 92px;
+  padding: 0 6%;
+  background: #fffdf9;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo-area h1 {
+  margin: 0;
+  font-family: Georgia, serif;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.logo-area span {
+  font-size: 10px;
+  letter-spacing: 4px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+
+nav a {
+  color: #111;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+
+nav a:hover,
+nav a.active {
+  color: #788875;
+}
+
+nav a.active {
+  border-bottom: 1px solid #788875;
+  padding-bottom: 8px;
+}
+
+.book-btn {
+  display: inline-block;
+
+  padding: 14px 28px;
+
+  background: #788875;
+  color: white;
+
+  border-radius: 7px;
+
+  text-decoration: none;
+  text-transform: uppercase;
+
+  font-size: 14px;
+  letter-spacing: 0.7px;
+
+  transition: 0.2s;
+}
+
+.book-btn:hover {
+  background: #657462;
+}
+
+
+/* HERO */
+
+.hero {
+  min-height: 250px;
+
+  background:
+    linear-gradient(
+      rgba(245, 240, 230, 0.45),
+      rgba(245, 240, 230, 0.45)
+    ),
+    url("salon.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+.hero h2 {
+  margin: 0;
+
+  font-family: Georgia, serif;
+
+  font-size: 58px;
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+
+.hero-line {
+  width: 60px;
+  height: 1px;
+
+  margin: 22px auto;
+
+  background: #333;
+}
+
+.hero p {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+
+/* MAIN PRICE AREA */
+
+main {
+  max-width: 1400px;
+  margin: auto;
+  padding: 38px 5% 55px;
+}
+
+.price-layout {
+  display: grid;
+  grid-template-columns: 0.78fr 1.22fr;
+  gap: 25px;
+}
+
+.price-panel {
+  background: #fffdfa;
+
+  border: 1px solid #ddd8cd;
+  border-radius: 10px;
+
+  padding: 30px 26px;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+
+  margin-bottom: 25px;
+}
+
+.section-title h2 {
+  margin: 0;
+
+  font-family: Georgia, serif;
+  font-size: 28px;
+  font-weight: 400;
+
+  letter-spacing: 1px;
+}
+
+.section-title span {
+  color: #809176;
+}
+
+
+/* HAIR */
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 20px;
+
+  padding: 18px 4px;
+
+  border-bottom: 1px dotted #d6d1c8;
+
+  font-size: 16px;
+}
+
+.price-row strong {
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.note {
+  background: #efede6;
+
+  padding: 18px 20px;
+  margin-top: 28px;
+
+  border-radius: 7px;
+
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+
+/* WAXING */
+
+.wax-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 12px;
+}
+
+.wax-card {
+  border: 1px solid #dedbd2;
+  border-radius: 9px;
+
+  overflow: hidden;
+
+  background: #fff;
+}
+
+.full-width {
+  margin-bottom: 12px;
+}
+
+.wax-card h3 {
+  margin: 0;
+
+  padding: 16px 24px;
+
+  background: #eeeee8;
+
+  font-family: Georgia, serif;
+
+  font-size: 21px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.small-row {
+  display: flex;
+  align-items: center;
+
+  padding: 8px 25px;
+
+  font-size: 14px;
+}
+
+.small-row span {
+  white-space: nowrap;
+}
+
+.small-row span::after {
+  content: "";
+
+  display: inline-block;
+
+  width: 100px;
+
+  margin: 0 10px;
+
+  border-bottom: 1px dotted #ddd;
+}
+
+.small-row strong {
+  margin-left: auto;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.wax-card {
+  padding-bottom: 14px;
+}
+
+
+/* SALON INFO */
+
+.salon-info {
+  text-align: center;
+
+  padding: 22px;
+
+  background: #eeeee8;
+}
+
+.salon-info h3 {
+  background: transparent;
+  padding: 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.salon-info p {
+  line-height: 1.5;
+  font-size: 13px;
+}
+
+.mini-line {
+  width: 40px;
+
+  border-bottom: 1px solid #758271;
+
+  margin: 18px auto;
+}
+
+
+/* BOOKING */
+
+.booking-box {
+  margin: 35px auto 0;
+
+  max-width: 1100px;
+
+  padding: 22px 70px;
+
+  background: #fffdfa;
+
+  border: 1px solid #ddd8cd;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.booking-box h2 {
+  font-family: Georgia, serif;
+
+  margin: 0 0 6px;
+
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.booking-box p {
+  margin: 0;
+  font-size: 14px;
+}
+
+
+/* FOOTER */
+
+footer {
+  background: #7e8d78;
+  color: white;
+}
+
+.footer-grid {
+  max-width: 1300px;
+  margin: auto;
+
+  padding: 45px 6%;
+
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1.4fr 1fr;
+
+  gap: 50px;
+}
+
+footer h2 {
+  font-family: Georgia, serif;
+
+  font-size: 34px;
+  font-weight: 400;
+
+  margin: 0;
+}
+
+.footer-brand {
+  font-size: 10px;
+  letter-spacing: 4px;
+}
+
+footer h3 {
+  font-size: 13px;
+
+  font-weight: 500;
+}
+
+footer p,
+footer a {
+  color: white;
+
+  font-size: 13px;
+  line-height: 1.6;
+
+  text-decoration: none;
+}
+
+footer a {
+  display: block;
+  margin: 8px 0;
+}
+
+.copyright {
+  text-align: center;
+
+  padding: 18px;
+
+  background: #2e302e;
+
+  font-size: 12px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 950px) {
+
+  .site-header {
+    height: auto;
+
+    padding: 18px 5%;
+
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  nav {
+    order: 3;
+    width: 100%;
+
+    overflow-x: auto;
+
+    gap: 18px;
+  }
+
+  .hero h2 {
+    font-size: 42px;
+  }
+
+  .price-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  main {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .logo-area h1 {
+    font-size: 26px;
+  }
+
+  .site-header > .book-btn {
+    padding: 10px 16px;
+    font-size: 12px;
+  }
+
+  nav a {
+    font-size: 11px;
+  }
+
+  .hero {
+    min-height: 190px;
+  }
+
+  .hero h2 {
+    font-size: 36px;
+  }
+
+  .section-title h2 {
+    font-size: 22px;
+  }
+
+  .price-panel {
+    padding: 22px 16px;
+  }
+
+  .price-row {
+    font-size: 14px;
+  }
+
+  .wax-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .small-row {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .small-row span::after {
+    display: none;
+  }
+
+  .booking-box {
+    padding: 25px;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 20px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+  }
+}

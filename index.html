@@ -1,378 +1,618 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MeetLife Beauty Salon | Price List</title>
+
+  <title>MeetLife Beauty Salon | South San Francisco</title>
+
+  <meta
+    name="description"
+    content="MeetLife Beauty Salon in South San Francisco offers haircuts, hair color, perms, treatments, waxing, and more."
+  />
+
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
+  <!-- HEADER -->
   <header class="site-header">
-    <div class="logo-area">
+
+    <a href="index.html" class="logo-area">
       <h1>MeetLife</h1>
       <span>BEAUTY SALON</span>
-    </div>
+    </a>
 
     <nav>
-      <a href="#home">Home</a>
+      <a href="index.html" class="active">Home</a>
       <a href="#services">Services</a>
-      <a href="#price" class="active">Price List</a>
+      <a href="price.html">Price List</a>
       <a href="#about">About Us</a>
       <a href="#contact">Contact</a>
     </nav>
 
     <a href="/book" class="book-btn">Book Now</a>
+
   </header>
 
 
-  <section class="hero" id="home">
-    <div class="hero-overlay">
-      <h2>PRICE LIST</h2>
+  <!-- HERO -->
+  <section class="home-hero">
+
+    <div class="home-hero-overlay">
+
+      <p class="hero-small-text">
+        WELCOME TO
+      </p>
+
+      <h1>
+        MeetLife
+      </h1>
+
+      <span class="hero-brand">
+        BEAUTY SALON
+      </span>
+
       <div class="hero-line"></div>
-      <p>Quality Services. Beautiful Results.</p>
+
+      <h2>
+        Coming Soon...<br />
+        Sempterber 2026
+      </h2>
+
+      <p class="hero-description">
+        Hair, beauty, and self-care in the heart of
+        South San Francisco.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a href="/book" class="book-btn">
+          Book Appointment
+        </a>
+
+        <a href="price.html" class="outline-btn">
+          View Price List
+        </a>
+
+      </div>
+
     </div>
+
   </section>
 
 
-  <main id="price">
+  <!-- INTRO -->
+  <section class="welcome-section" id="about">
 
-    <section class="price-layout">
+    <div class="welcome-image">
 
-      <!-- HAIR SERVICES -->
-      <div class="price-panel hair-panel">
+      <img
+        src="salon-interior.jpg"
+        alt="MeetLife Beauty Salon interior"
+      />
 
-        <div class="section-title">
-          <span>🌿</span>
-          <h2>HAIR SERVICES</h2>
-          <span>🌿</span>
+    </div>
+
+    <div class="welcome-content">
+
+      <p class="section-label">
+        WELCOME TO MEETLIFE
+      </p>
+
+      <h2>
+        Beauty That Feels<br />
+        Like You
+      </h2>
+
+      <div class="title-line"></div>
+
+      <p>
+        At MeetLife Beauty Salon, we believe beauty is personal.
+        Our goal is to create a comfortable and welcoming space
+        where every guest can relax, refresh, and leave feeling
+        confident.
+      </p>
+
+      <p>
+        From everyday haircuts to color, perms, treatments, and
+        professional waxing services, our stylists are here to
+        help you find a look that fits your lifestyle.
+      </p>
+
+      <a href="#services" class="text-link">
+        Explore Our Services →
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- SERVICES -->
+  <section class="home-services" id="services">
+
+    <div class="home-section-heading">
+
+      <p class="section-label">
+        WHAT WE OFFER
+      </p>
+
+      <h2>
+        Our Services
+      </h2>
+
+      <div class="title-line"></div>
+
+      <p>
+        Personalized beauty services designed around you.
+      </p>
+
+    </div>
+
+
+    <div class="service-grid">
+
+      <!-- HAIRCUT -->
+      <div class="service-card">
+
+        <div class="service-icon">
+          ✂
         </div>
 
-        <div class="price-row">
-          <span>Kid’s Haircut</span>
-          <strong>$25 & Up</strong>
-        </div>
+        <h3>
+          Haircuts
+        </h3>
 
-        <div class="price-row">
-          <span>Men’s Haircut</span>
-          <strong>$28 & Up</strong>
-        </div>
+        <p>
+          Personalized cuts for women, men, and kids,
+          tailored to your style and lifestyle.
+        </p>
 
-        <div class="price-row">
-          <span>Women’s Short Haircut</span>
-          <strong>$35 & Up</strong>
-        </div>
-
-        <div class="price-row">
-          <span>Women’s Long Haircut</span>
-          <strong>$45 & Up</strong>
-        </div>
-
-        <div class="price-row">
-          <span>Shampoo & Blow Dry</span>
-          <strong>$30 & Up</strong>
-        </div>
-
-        <div class="price-row">
-          <span>Straight Ironing</span>
-          <strong>$35 & Up</strong>
-        </div>
-
-        <div class="price-row">
-          <span>Men’s Perm (perm + cut)</span>
-          <strong>$110 & Up</strong>
-        </div>
-
-        <div class="price-row">
-          <span>Women’s Perm</span>
-          <strong>$110 & Up</strong>
-        </div>
-
-        <div class="price-row">
-          <span>Hair Color</span>
-          <strong>$85 & Up</strong>
-        </div>
-
-        <div class="price-row">
-          <span>Touch-up</span>
-          <strong>$65 & Up</strong>
-        </div>
-
-        <div class="price-row">
-          <span>Highlights</span>
-          <strong>$120 & Up</strong>
-        </div>
-
-        <div class="price-row">
-          <span>Japanese Permanent Hair Straightening</span>
-          <strong>$180 & Up</strong>
-        </div>
-
-        <div class="price-row">
-          <span>Hair Treatments</span>
-          <strong>$55 & Up</strong>
-        </div>
-
-        <div class="note">
-          * Prices may vary depending on hair length, thickness, and stylist.
-          Please consult with our stylist for a quote.
-        </div>
+        <a href="price.html">
+          View Pricing →
+        </a>
 
       </div>
 
 
-      <!-- WAXING SERVICES -->
-      <div class="price-panel">
+      <!-- COLOR -->
+      <div class="service-card">
 
-        <div class="section-title">
-          <span>🌿</span>
-          <h2>WAXING SERVICES</h2>
-          <span>🌿</span>
+        <div class="service-icon">
+          ◇
         </div>
 
+        <h3>
+          Hair Color
+        </h3>
 
-        <!-- FACE -->
-        <div class="wax-card full-width">
-          <h3>FACE</h3>
+        <p>
+          Hair color, root touch-ups, highlights,
+          and customized color services.
+        </p>
 
-          <div class="small-row">
-            <span>Full Face (with brow)</span>
-            <strong>$45 & up</strong>
-          </div>
+        <a href="price.html">
+          View Pricing →
+        </a>
 
-          <div class="small-row">
-            <span>Side-Burns</span>
-            <strong>$20 & up</strong>
-          </div>
+      </div>
 
-          <div class="small-row">
-            <span>Eyebrow</span>
-            <strong>$15 & up</strong>
-          </div>
 
-          <div class="small-row">
-            <span>Neck</span>
-            <strong>$18 & up</strong>
-          </div>
+      <!-- PERM -->
+      <div class="service-card">
 
-          <div class="small-row">
-            <span>Chin</span>
-            <strong>$10 & up</strong>
-          </div>
-
-          <div class="small-row">
-            <span>Upper Lip</span>
-            <strong>$15 & up</strong>
-          </div>
+        <div class="service-icon">
+          ∿
         </div>
 
+        <h3>
+          Perm & Straightening
+        </h3>
 
-        <div class="wax-grid">
+        <p>
+          Create soft waves, defined texture,
+          or smooth straight hair with professional care.
+        </p>
 
-          <!-- ARMS -->
-          <div class="wax-card">
-            <h3>ARMS</h3>
+        <a href="price.html">
+          View Pricing →
+        </a>
 
-            <div class="small-row">
-              <span>Full Arms</span>
-              <strong>$50 & up</strong>
-            </div>
-
-            <div class="small-row">
-              <span>Half Arms</span>
-              <strong>$30 & up</strong>
-            </div>
-
-            <div class="small-row">
-              <span>Underarms</span>
-              <strong>$25 & up</strong>
-            </div>
-
-            <div class="small-row">
-              <span>Hands</span>
-              <strong>$15 & up</strong>
-            </div>
-          </div>
+      </div>
 
 
-          <!-- BODY FRONT -->
-          <div class="wax-card">
-            <h3>BODY (FRONT)</h3>
+      <!-- TREATMENT -->
+      <div class="service-card">
 
-            <div class="small-row">
-              <span>Chest</span>
-              <strong>$40 & up</strong>
-            </div>
-
-            <div class="small-row">
-              <span>Stomach</span>
-              <strong>$35 & up</strong>
-            </div>
-
-            <div class="small-row">
-              <span>Chest & Stomach</span>
-              <strong>$55 & up</strong>
-            </div>
-
-            <div class="small-row">
-              <span>Stomach</span>
-              <strong>$20 & up</strong>
-            </div>
-          </div>
-
-
-          <!-- BODY BACK -->
-          <div class="wax-card">
-            <h3>BODY (BACK)</h3>
-
-            <div class="small-row">
-              <span>Full Back</span>
-              <strong>$55 & up</strong>
-            </div>
-
-            <div class="small-row">
-              <span>Lower Back</span>
-              <strong>$35 & up</strong>
-            </div>
-
-            <div class="small-row">
-              <span>Upper Back</span>
-              <strong>$35 & up</strong>
-            </div>
-
-            <div class="small-row">
-              <span>Shoulders</span>
-              <strong>$25 & up</strong>
-            </div>
-          </div>
-
-
-          <!-- LEGS -->
-          <div class="wax-card">
-            <h3>LEGS</h3>
-
-            <div class="small-row">
-              <span>Full Legs</span>
-              <strong>$65 & up</strong>
-            </div>
-
-            <div class="small-row">
-              <span>Upper Legs</span>
-              <strong>$45 & up</strong>
-            </div>
-
-            <div class="small-row">
-              <span>Lower Legs</span>
-              <strong>$40 & up</strong>
-            </div>
-
-            <div class="small-row">
-              <span>Feet & Toes</span>
-              <strong>$18 & up</strong>
-            </div>
-
-            <div class="small-row">
-              <span>Inner Thighs</span>
-              <strong>$18 & up</strong>
-            </div>
-          </div>
-
-
-          <!-- BELOW THE WAIST -->
-          <div class="wax-card">
-            <h3>BELOW THE WAIST</h3>
-
-            <div class="small-row">
-              <span>Bikini</span>
-              <strong>$40 & up</strong>
-            </div>
-
-            <div class="small-row">
-              <span>Brazilian Inner</span>
-              <strong>$20 & up</strong>
-            </div>
-
-            <div class="small-row">
-              <span>Full Butt</span>
-              <strong>$40 & up</strong>
-            </div>
-          </div>
-
-
-          <!-- SALON INFO -->
-          <div class="wax-card salon-info">
-            <h3>Smooth Skin</h3>
-            <p>Lasting Confidence</p>
-
-            <div class="mini-line"></div>
-
-            <p>
-              309 Linden Avenue<br />
-              South San Francisco, CA 94080
-            </p>
-
-            <p>Tel: (650) 869-9994</p>
-          </div>
-
+        <div class="service-icon">
+          ♢
         </div>
 
+        <h3>
+          Hair Treatments
+        </h3>
+
+        <p>
+          Restore moisture, softness, and shine
+          with treatments selected for your hair.
+        </p>
+
+        <a href="price.html">
+          View Pricing →
+        </a>
+
       </div>
 
-    </section>
 
+      <!-- WAXING -->
+      <div class="service-card">
 
-    <section class="booking-box">
-      <div>
-        <h2>READY TO BOOK?</h2>
-        <p>Book your appointment today and let us take care of you.</p>
+        <div class="service-icon">
+          ♡
+        </div>
+
+        <h3>
+          Waxing
+        </h3>
+
+        <p>
+          Professional facial and body waxing
+          for smooth, clean, long-lasting results.
+        </p>
+
+        <a href="price.html">
+          View Pricing →
+        </a>
+
       </div>
 
-      <a href="/book" class="book-btn">Book Now</a>
-    </section>
 
-  </main>
+      <!-- WALK INS -->
+      <div class="service-card walkin-card">
 
+        <div class="service-icon">
+          +
+        </div>
 
-  <footer id="contact">
+        <h3>
+          Walk-Ins Welcome
+        </h3>
 
-    <div class="footer-grid">
+        <p>
+          Appointments are recommended,
+          but walk-in guests are always welcome
+          based on stylist availability.
+        </p>
 
-      <div>
-        <h2>MeetLife</h2>
-        <span class="footer-brand">BEAUTY SALON</span>
-        <p>Your beauty, your style,<br />our passion.</p>
+        <a href="#contact">
+          Visit Us →
+        </a>
+
       </div>
 
-      <div>
-        <h3>QUICK LINKS</h3>
-        <a href="#home">Home</a>
-        <a href="#services">Services</a>
-        <a href="#price">Price List</a>
-        <a href="#about">About Us</a>
-        <a href="#contact">Contact</a>
+    </div>
+
+  </section>
+
+
+  <!-- FEATURE SECTION -->
+  <section class="experience-section">
+
+    <div class="experience-content">
+
+      <p class="section-label">
+        THE MEETLIFE EXPERIENCE
+      </p>
+
+      <h2>
+        More Than a Haircut
+      </h2>
+
+      <div class="title-line light-line"></div>
+
+      <p>
+        A visit to MeetLife is time for yourself.
+        Enjoy thoughtful service, professional care,
+        and a welcoming atmosphere designed to make
+        your beauty routine feel effortless.
+      </p>
+
+      <a href="/book" class="light-btn">
+        Book Your Visit
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- WHY CHOOSE US -->
+  <section class="why-section">
+
+    <div class="home-section-heading">
+
+      <p class="section-label">
+        WHY MEETLIFE
+      </p>
+
+      <h2>
+        Made for Your Everyday Beauty
+      </h2>
+
+      <div class="title-line"></div>
+
+    </div>
+
+
+    <div class="why-grid">
+
+      <div class="why-item">
+
+        <span>01</span>
+
+        <h3>
+          Personalized Service
+        </h3>
+
+        <p>
+          We take the time to understand your preferences
+          before every service.
+        </p>
+
       </div>
 
-      <div>
-        <h3>CONTACT US</h3>
+
+      <div class="why-item">
+
+        <span>02</span>
+
+        <h3>
+          Comfortable Space
+        </h3>
+
+        <p>
+          A relaxed and welcoming salon experience
+          in downtown South San Francisco.
+        </p>
+
+      </div>
+
+
+      <div class="why-item">
+
+        <span>03</span>
+
+        <h3>
+          Professional Care
+        </h3>
+
+        <p>
+          Thoughtful techniques and services designed
+          around your hair and beauty needs.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- LOCATION -->
+  <section class="location-section" id="contact">
+
+    <div class="location-info">
+
+      <p class="section-label">
+        VISIT US
+      </p>
+
+      <h2>
+        MeetLife Beauty Salon
+      </h2>
+
+      <div class="title-line left-line"></div>
+
+      <div class="location-detail">
+
+        <h3>
+          Address
+        </h3>
 
         <p>
           309 Linden Avenue<br />
           South San Francisco, CA 94080
         </p>
 
-        <p>(650) 869-9994</p>
-
-        <p>Mon – Sun: 10:00 AM – 6:30 PM</p>
       </div>
 
-      <div>
-        <h3>FOLLOW US</h3>
-        <p>Stay connected for the latest updates & promotions.</p>
-        <p>Instagram · Facebook</p>
+
+      <div class="location-detail">
+
+        <h3>
+          Phone
+        </h3>
+
+        <p>
+          <a href="tel:+16508699994">
+            (650) 869-9994
+          </a>
+        </p>
+
+      </div>
+
+
+      <div class="location-detail">
+
+        <h3>
+          Hours
+        </h3>
+
+        <p>
+          Monday – Sunday<br />
+          10:00 AM – 6:30 PM
+        </p>
+
+      </div>
+
+
+      <div class="location-buttons">
+
+        <a href="/book" class="book-btn">
+          Book Now
+        </a>
+
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=309+Linden+Avenue+South+San+Francisco+CA+94080"
+          target="_blank"
+          class="outline-btn"
+        >
+          Get Directions
+        </a>
+
       </div>
 
     </div>
+
+
+    <div class="location-map">
+
+      <iframe
+        src="https://www.google.com/maps?q=309%20Linden%20Avenue%20South%20San%20Francisco%20CA%2094080&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="MeetLife Beauty Salon location"
+      ></iframe>
+
+    </div>
+
+  </section>
+
+
+  <!-- BOOKING CTA -->
+  <section class="home-booking">
+
+    <div>
+
+      <p class="section-label">
+        READY FOR YOUR NEXT LOOK?
+      </p>
+
+      <h2>
+        Your Next Appointment Starts Here.
+      </h2>
+
+      <p>
+        Book your visit and let us take care of the rest.
+      </p>
+
+    </div>
+
+    <a href="/book" class="book-btn">
+      Book Appointment
+    </a>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="footer-grid">
+
+      <div>
+
+        <h2>
+          MeetLife
+        </h2>
+
+        <span class="footer-brand">
+          BEAUTY SALON
+        </span>
+
+        <p>
+          Your beauty, your style,<br />
+          our passion.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          QUICK LINKS
+        </h3>
+
+        <a href="index.html">
+          Home
+        </a>
+
+        <a href="#services">
+          Services
+        </a>
+
+        <a href="price.html">
+          Price List
+        </a>
+
+        <a href="#about">
+          About Us
+        </a>
+
+        <a href="#contact">
+          Contact
+        </a>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          CONTACT US
+        </h3>
+
+        <p>
+          309 Linden Avenue<br />
+          South San Francisco, CA 94080
+        </p>
+
+        <p>
+          <a href="tel:+16508699994">
+            (650) 869-9994
+          </a>
+        </p>
+
+        <p>
+          Mon – Sun: 10:00 AM – 6:30 PM
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h3>
+          FOLLOW US
+        </h3>
+
+        <p>
+          Stay connected for the latest
+          updates & promotions.
+        </p>
+
+        <p>
+          Instagram · Facebook
+        </p>
+
+      </div>
+
+    </div>
+
 
     <div class="copyright">
       © 2026 MeetLife Beauty Salon. All Rights Reserved.
@@ -382,3 +622,4 @@
 
 </body>
 </html>
+```

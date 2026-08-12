@@ -526,3 +526,843 @@ footer a {
     gap: 25px;
   }
 }
+
+
+/* =========================
+   HOME PAGE
+========================= */
+
+
+/* LOGO LINK */
+
+.logo-area {
+  color: #20211f;
+  text-decoration: none;
+}
+
+
+/* HOME HERO */
+
+.home-hero {
+  min-height: 680px;
+
+  background:
+    linear-gradient(
+      rgba(25, 28, 24, 0.26),
+      rgba(25, 28, 24, 0.32)
+    ),
+    url("salon-hero.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  color: white;
+
+  padding: 80px 20px;
+}
+
+
+.home-hero-overlay {
+  max-width: 850px;
+}
+
+
+.hero-small-text {
+  margin: 0 0 15px;
+
+  font-size: 12px;
+
+  letter-spacing: 5px;
+}
+
+
+.home-hero h1 {
+  margin: 0;
+
+  font-family: Georgia, serif;
+
+  font-size: 86px;
+  font-weight: 400;
+
+  line-height: 1;
+}
+
+
+.hero-brand {
+  display: block;
+
+  margin-top: 10px;
+
+  font-size: 12px;
+
+  letter-spacing: 7px;
+}
+
+
+.home-hero .hero-line {
+  background: white;
+
+  width: 65px;
+
+  margin: 30px auto;
+}
+
+
+.home-hero h2 {
+  margin: 0;
+
+  font-family: Georgia, serif;
+
+  font-size: 42px;
+  font-weight: 400;
+
+  line-height: 1.25;
+}
+
+
+.hero-description {
+  max-width: 550px;
+
+  margin: 20px auto 30px;
+
+  font-size: 16px;
+
+  line-height: 1.7;
+}
+
+
+.hero-buttons {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 14px;
+
+  flex-wrap: wrap;
+}
+
+
+.outline-btn {
+  display: inline-block;
+
+  padding: 13px 27px;
+
+  border: 1px solid #788875;
+
+  border-radius: 7px;
+
+  color: #596555;
+
+  background: transparent;
+
+  text-decoration: none;
+
+  text-transform: uppercase;
+
+  font-size: 14px;
+
+  letter-spacing: 0.7px;
+
+  transition: 0.2s;
+}
+
+
+.outline-btn:hover {
+  background: #788875;
+
+  color: white;
+}
+
+
+.home-hero .outline-btn {
+  border-color: white;
+
+  color: white;
+}
+
+
+.home-hero .outline-btn:hover {
+  background: white;
+
+  color: #53604f;
+}
+
+
+/* SECTION COMMON */
+
+.section-label {
+  margin: 0 0 12px;
+
+  color: #788875;
+
+  font-size: 11px;
+
+  letter-spacing: 4px;
+
+  font-weight: 600;
+}
+
+
+.title-line {
+  width: 50px;
+
+  border-bottom: 1px solid #788875;
+
+  margin: 22px auto;
+}
+
+
+.left-line {
+  margin-left: 0;
+}
+
+
+.home-section-heading {
+  max-width: 700px;
+
+  margin: 0 auto 50px;
+
+  text-align: center;
+}
+
+
+.home-section-heading h2 {
+  margin: 0;
+
+  font-family: Georgia, serif;
+
+  font-size: 44px;
+
+  font-weight: 400;
+}
+
+
+.home-section-heading > p:last-child {
+  color: #686b66;
+
+  line-height: 1.7;
+}
+
+
+/* WELCOME */
+
+.welcome-section {
+  max-width: 1250px;
+
+  margin: auto;
+
+  padding: 100px 6%;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  align-items: center;
+
+  gap: 80px;
+}
+
+
+.welcome-image img {
+  display: block;
+
+  width: 100%;
+
+  height: 540px;
+
+  object-fit: cover;
+
+  border-radius: 6px;
+}
+
+
+.welcome-content h2 {
+  margin: 0;
+
+  font-family: Georgia, serif;
+
+  font-size: 48px;
+
+  font-weight: 400;
+
+  line-height: 1.15;
+}
+
+
+.welcome-content .title-line {
+  margin-left: 0;
+}
+
+
+.welcome-content > p:not(.section-label) {
+  color: #62655f;
+
+  font-size: 15px;
+
+  line-height: 1.9;
+}
+
+
+.text-link {
+  display: inline-block;
+
+  margin-top: 10px;
+
+  color: #657462;
+
+  text-decoration: none;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+
+/* SERVICES */
+
+.home-services {
+  padding: 100px 6%;
+
+  background: #efede6;
+}
+
+
+.service-grid {
+  max-width: 1250px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 20px;
+}
+
+
+.service-card {
+  min-height: 310px;
+
+  background: #fffdf9;
+
+  border: 1px solid #ddd8cd;
+
+  border-radius: 8px;
+
+  padding: 40px 32px;
+
+  transition:
+    transform 0.25s,
+    box-shadow 0.25s;
+}
+
+
+.service-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 12px 32px
+    rgba(40, 45, 38, 0.08);
+}
+
+
+.service-icon {
+  width: 52px;
+  height: 52px;
+
+  border: 1px solid #9ba695;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 28px;
+
+  color: #788875;
+
+  font-family: Georgia, serif;
+
+  font-size: 24px;
+}
+
+
+.service-card h3 {
+  margin: 0 0 16px;
+
+  font-family: Georgia, serif;
+
+  font-size: 25px;
+
+  font-weight: 400;
+}
+
+
+.service-card p {
+  min-height: 74px;
+
+  color: #676a64;
+
+  font-size: 14px;
+
+  line-height: 1.75;
+}
+
+
+.service-card a {
+  color: #687765;
+
+  text-decoration: none;
+
+  text-transform: uppercase;
+
+  font-size: 11px;
+
+  letter-spacing: 1px;
+
+  font-weight: 600;
+}
+
+
+.walkin-card {
+  background: #e4e8e0;
+}
+
+
+/* EXPERIENCE */
+
+.experience-section {
+  min-height: 510px;
+
+  padding: 90px 6%;
+
+  background:
+    linear-gradient(
+      rgba(62, 72, 59, 0.75),
+      rgba(62, 72, 59, 0.75)
+    ),
+    url("salon-detail.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: white;
+
+  text-align: center;
+}
+
+
+.experience-content {
+  max-width: 700px;
+}
+
+
+.experience-content .section-label {
+  color: #f4f2ea;
+}
+
+
+.experience-content h2 {
+  margin: 0;
+
+  font-family: Georgia, serif;
+
+  font-size: 50px;
+
+  font-weight: 400;
+}
+
+
+.experience-content p:not(.section-label) {
+  margin: 20px auto 30px;
+
+  max-width: 600px;
+
+  line-height: 1.8;
+
+  color: #f2f2ee;
+}
+
+
+.light-line {
+  border-color: white;
+}
+
+
+.light-btn {
+  display: inline-block;
+
+  padding: 14px 28px;
+
+  border: 1px solid white;
+
+  border-radius: 7px;
+
+  color: white;
+
+  text-decoration: none;
+
+  text-transform: uppercase;
+
+  font-size: 13px;
+
+  letter-spacing: 1px;
+}
+
+
+.light-btn:hover {
+  background: white;
+
+  color: #667163;
+}
+
+
+/* WHY */
+
+.why-section {
+  padding: 100px 6%;
+
+  background: #fffdf9;
+}
+
+
+.why-grid {
+  max-width: 1100px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 60px;
+}
+
+
+.why-item {
+  text-align: center;
+}
+
+
+.why-item > span {
+  display: block;
+
+  margin-bottom: 18px;
+
+  color: #a5aea0;
+
+  font-family: Georgia, serif;
+
+  font-size: 30px;
+}
+
+
+.why-item h3 {
+  margin: 0 0 12px;
+
+  font-family: Georgia, serif;
+
+  font-size: 22px;
+
+  font-weight: 400;
+}
+
+
+.why-item p {
+  color: #686b66;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* LOCATION */
+
+.location-section {
+  display: grid;
+
+  grid-template-columns: 0.8fr 1.2fr;
+
+  background: #efede6;
+}
+
+
+.location-info {
+  padding: 85px 10%;
+}
+
+
+.location-info h2 {
+  margin: 0;
+
+  font-family: Georgia, serif;
+
+  font-size: 42px;
+
+  font-weight: 400;
+
+  line-height: 1.2;
+}
+
+
+.location-detail {
+  margin: 25px 0;
+}
+
+
+.location-detail h3 {
+  margin: 0 0 6px;
+
+  font-size: 11px;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+}
+
+
+.location-detail p,
+.location-detail a {
+  margin: 0;
+
+  color: #565b54;
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+.location-buttons {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 12px;
+
+  margin-top: 30px;
+}
+
+
+.location-map iframe {
+  width: 100%;
+
+  height: 100%;
+
+  min-height: 600px;
+
+  border: 0;
+}
+
+
+/* BOOKING CTA */
+
+.home-booking {
+  max-width: 1150px;
+
+  margin: 70px auto;
+
+  padding: 45px 60px;
+
+  background: #fffdf9;
+
+  border: 1px solid #ddd8cd;
+
+  border-radius: 10px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 40px;
+}
+
+
+.home-booking h2 {
+  margin: 0 0 10px;
+
+  font-family: Georgia, serif;
+
+  font-size: 34px;
+
+  font-weight: 400;
+}
+
+
+.home-booking > div > p:last-child {
+  margin-bottom: 0;
+
+  color: #686b66;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 950px) {
+
+  .home-hero {
+    min-height: 570px;
+  }
+
+  .home-hero h1 {
+    font-size: 68px;
+  }
+
+  .home-hero h2 {
+    font-size: 36px;
+  }
+
+  .welcome-section {
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .welcome-image img {
+    height: 450px;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .why-grid {
+    gap: 30px;
+  }
+
+  .location-section {
+    grid-template-columns: 1fr;
+  }
+
+  .location-map iframe {
+    min-height: 400px;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .home-hero {
+    min-height: 520px;
+
+    padding: 60px 18px;
+  }
+
+  .home-hero h1 {
+    font-size: 52px;
+  }
+
+  .hero-brand {
+    letter-spacing: 5px;
+  }
+
+  .home-hero h2 {
+    font-size: 30px;
+  }
+
+  .hero-description {
+    font-size: 14px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  .hero-buttons a {
+    width: 220px;
+
+    text-align: center;
+  }
+
+  .welcome-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .welcome-image img {
+    height: 330px;
+  }
+
+  .welcome-content h2,
+  .home-section-heading h2,
+  .experience-content h2 {
+    font-size: 34px;
+  }
+
+  .home-services,
+  .why-section {
+    padding:
+      70px 20px;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    min-height: auto;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+  }
+
+  .location-info {
+    padding: 65px 25px;
+  }
+
+  .location-info h2 {
+    font-size: 34px;
+  }
+
+  .location-map iframe {
+    min-height: 330px;
+  }
+
+  .home-booking {
+    margin:
+      45px 15px;
+
+    padding:
+      35px 25px;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .home-booking h2 {
+    font-size: 28px;
+  }
+}
+

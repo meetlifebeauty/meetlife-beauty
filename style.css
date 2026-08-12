@@ -1366,3 +1366,413 @@ footer a {
   }
 }
 
+/* =========================
+   SERVICES PAGE
+========================= */
+
+.services-hero {
+  min-height: 430px;
+
+  background:
+    linear-gradient(
+      rgba(40, 46, 38, 0.48),
+      rgba(40, 46, 38, 0.48)
+    ),
+    url("services-hero.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 70px 20px;
+
+  text-align: center;
+  color: white;
+}
+
+
+.services-hero-overlay {
+  max-width: 750px;
+}
+
+
+.services-hero h1 {
+  margin: 0;
+
+  font-family: Georgia, serif;
+  font-size: 62px;
+  font-weight: 400;
+
+  letter-spacing: 2px;
+}
+
+
+.services-hero p:last-child {
+  max-width: 560px;
+
+  margin: auto;
+
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+
+.light-label {
+  color: #f4f2ea;
+}
+
+
+/* INTRO */
+
+.services-intro {
+  max-width: 760px;
+
+  margin: auto;
+
+  padding: 90px 25px;
+
+  text-align: center;
+}
+
+
+.services-intro h2 {
+  margin: 0;
+
+  font-family: Georgia, serif;
+
+  font-size: 44px;
+  font-weight: 400;
+}
+
+
+.services-intro > p:last-child {
+  color: #676a64;
+
+  font-size: 15px;
+
+  line-height: 1.9;
+}
+
+
+/* SERVICE FEATURE */
+
+.service-feature {
+  max-width: 1250px;
+
+  margin: 0 auto 80px;
+
+  padding: 0 5%;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  align-items: center;
+
+  gap: 75px;
+}
+
+
+.service-feature-image img {
+  display: block;
+
+  width: 100%;
+  height: 520px;
+
+  object-fit: cover;
+
+  border-radius: 8px;
+}
+
+
+.service-feature-content h2 {
+  margin: 0;
+
+  font-family: Georgia, serif;
+
+  font-size: 42px;
+  font-weight: 400;
+}
+
+
+.service-feature-content p {
+  color: #686b66;
+
+  line-height: 1.8;
+
+  font-size: 15px;
+}
+
+
+.reverse-service .service-feature-image {
+  order: 2;
+}
+
+
+.reverse-service .service-feature-content {
+  order: 1;
+}
+
+
+/* SERVICE LIST */
+
+.service-list {
+  margin: 28px 0;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 0;
+}
+
+
+.service-list span {
+  padding: 14px 5px;
+
+  border-bottom: 1px solid #ddd8cd;
+
+  color: #454843;
+
+  font-size: 14px;
+}
+
+
+.service-list span:nth-child(odd) {
+  margin-right: 22px;
+}
+
+
+.service-note {
+  font-size: 12px !important;
+
+  font-style: italic;
+
+  color: #878b83 !important;
+}
+
+
+/* WAXING SERVICES */
+
+.waxing-service-section {
+  padding: 95px 6%;
+
+  background: #efede6;
+}
+
+
+.wax-service-grid {
+  max-width: 1150px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 18px;
+}
+
+
+.wax-service-card {
+  min-height: 200px;
+
+  padding: 34px 30px;
+
+  background: #fffdf9;
+
+  border: 1px solid #ddd8cd;
+
+  border-radius: 8px;
+}
+
+
+.wax-service-card h3 {
+  margin: 0 0 15px;
+
+  font-family: Georgia, serif;
+
+  font-size: 24px;
+  font-weight: 400;
+}
+
+
+.wax-service-card p {
+  color: #686b66;
+
+  line-height: 1.7;
+
+  font-size: 14px;
+}
+
+
+.wax-service-card a {
+  color: #657462;
+
+  text-decoration: none;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+
+  font-size: 11px;
+}
+
+
+.price-card {
+  background: #dfe5db;
+}
+
+
+/* CONSULTATION */
+
+.consultation-section {
+  padding: 65px 8%;
+
+  background: #788875;
+
+  color: white;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 90px;
+}
+
+
+.consultation-section > div {
+  max-width: 680px;
+}
+
+
+.consultation-section h2 {
+  margin: 0 0 15px;
+
+  font-family: Georgia, serif;
+
+  font-size: 40px;
+  font-weight: 400;
+}
+
+
+.consultation-section p:last-child {
+  margin-bottom: 0;
+
+  line-height: 1.8;
+
+  font-size: 14px;
+
+  color: #f2f3ef;
+}
+
+
+/* TABLET */
+
+@media (max-width: 950px) {
+
+  .services-hero h1 {
+    font-size: 50px;
+  }
+
+  .service-feature {
+    gap: 40px;
+  }
+
+  .service-feature-image img {
+    height: 430px;
+  }
+
+  .service-feature-content h2 {
+    font-size: 36px;
+  }
+
+  .wax-service-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .consultation-section {
+    gap: 40px;
+  }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+
+  .services-hero {
+    min-height: 340px;
+  }
+
+  .services-hero h1 {
+    font-size: 40px;
+  }
+
+  .services-intro {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  .services-intro h2 {
+    font-size: 34px;
+  }
+
+  .service-feature {
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+
+    margin-bottom: 65px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .reverse-service .service-feature-image,
+  .reverse-service .service-feature-content {
+    order: initial;
+  }
+
+  .service-feature-image img {
+    height: 340px;
+  }
+
+  .service-feature-content h2 {
+    font-size: 32px;
+  }
+
+  .service-list {
+    grid-template-columns: 1fr;
+  }
+
+  .service-list span:nth-child(odd) {
+    margin-right: 0;
+  }
+
+  .waxing-service-section {
+    padding: 70px 20px;
+  }
+
+  .wax-service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .consultation-section {
+    padding: 55px 25px;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 25px;
+  }
+
+  .consultation-section h2 {
+    font-size: 32px;
+  }
+}

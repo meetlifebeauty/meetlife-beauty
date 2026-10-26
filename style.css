@@ -2024,3 +2024,962 @@ footer a {
     padding: 90px 7%;
   }
 }
+
+/* =========================================
+   CONTACT PAGE
+========================================= */
+
+
+/* HERO */
+
+.contact-hero {
+  background: #f7f4ee;
+  text-align: center;
+  padding: 130px 8% 110px;
+}
+
+.section-label {
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 25px;
+}
+
+.contact-hero h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(48px, 6vw, 82px);
+  font-weight: 400;
+  line-height: 1.05;
+
+  color: #222;
+
+  margin: 0 0 30px;
+}
+
+.contact-hero-text {
+  max-width: 630px;
+
+  margin: 0 auto;
+
+  font-size: 17px;
+  line-height: 1.8;
+
+  color: #666;
+}
+
+
+/* =========================================
+   CONTACT INFORMATION
+========================================= */
+
+.contact-section {
+  display: grid;
+
+  grid-template-columns: 1.1fr 0.9fr;
+
+  gap: 70px;
+
+  padding: 120px 8%;
+
+  align-items: stretch;
+}
+
+
+/* LEFT SIDE */
+
+.contact-info h2 {
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 52px;
+
+  font-weight: 400;
+
+  margin: 0 0 45px;
+
+  color: #222;
+}
+
+
+/* CONTACT ITEMS */
+
+.contact-item {
+  padding: 25px 0;
+
+  border-bottom: 1px solid #ddd;
+}
+
+.contact-item span {
+  display: block;
+
+  font-size: 10px;
+
+  letter-spacing: 2.5px;
+
+  color: #999;
+
+  margin-bottom: 12px;
+}
+
+.contact-item p {
+  margin: 0;
+
+  font-size: 17px;
+
+  line-height: 1.7;
+
+  color: #444;
+}
+
+.contact-item a {
+  color: #444;
+
+  text-decoration: none;
+
+  transition: opacity 0.2s ease;
+}
+
+.contact-item a:hover {
+  opacity: 0.6;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.contact-buttons {
+  display: flex;
+
+  gap: 15px;
+
+  margin-top: 40px;
+
+  flex-wrap: wrap;
+}
+
+.contact-btn {
+  display: inline-block;
+
+  padding: 16px 30px;
+
+  background: #222;
+
+  color: white;
+
+  border: 1px solid #222;
+
+  text-decoration: none;
+
+  font-size: 12px;
+
+  letter-spacing: 1px;
+
+  transition: all 0.25s ease;
+}
+
+.contact-btn:hover {
+  background: #444;
+
+  border-color: #444;
+}
+
+
+/* OUTLINE BUTTON */
+
+.outline-btn {
+  background: transparent;
+
+  color: #222;
+}
+
+.outline-btn:hover {
+  background: #222;
+
+  color: white;
+}
+
+
+/* =========================================
+   DARK CONTACT CARD
+========================================= */
+
+.contact-card {
+  background: #282824;
+
+  color: white;
+
+  padding: 70px 55px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+.contact-card .section-label {
+  color: #aaa;
+}
+
+.contact-card h3 {
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 43px;
+
+  line-height: 1.2;
+
+  font-weight: 400;
+
+  margin: 10px 0 30px;
+}
+
+.contact-card p {
+  color: #c8c8c5;
+
+  line-height: 1.8;
+
+  font-size: 15px;
+
+  max-width: 450px;
+
+  margin: 0 0 35px;
+}
+
+.contact-phone {
+  color: white;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 26px;
+
+  text-decoration: none;
+
+  transition: opacity 0.2s ease;
+}
+
+.contact-phone:hover {
+  opacity: 0.65;
+}
+
+
+/* =========================================
+   LOCATION SECTION
+========================================= */
+
+.location-section {
+  background: #eee9df;
+
+  padding: 110px 8%;
+
+  display: grid;
+
+  grid-template-columns: 0.85fr 1.15fr;
+
+  gap: 70px;
+
+  align-items: center;
+}
+
+.location-info h2 {
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 48px;
+
+  font-weight: 400;
+
+  line-height: 1.15;
+
+  color: #222;
+
+  margin: 15px 0 30px;
+}
+
+.location-address {
+  font-size: 17px;
+
+  line-height: 1.8;
+
+  color: #333;
+
+  margin-bottom: 20px;
+}
+
+.location-description {
+  max-width: 430px;
+
+  font-size: 15px;
+
+  line-height: 1.8;
+
+  color: #666;
+}
+
+
+/* DIRECTIONS */
+
+.location-link {
+  display: inline-block;
+
+  margin-top: 25px;
+
+  padding-bottom: 5px;
+
+  color: #222;
+
+  text-decoration: none;
+
+  border-bottom: 1px solid #222;
+
+  font-size: 13px;
+
+  letter-spacing: 0.5px;
+
+  transition: opacity 0.2s ease;
+}
+
+.location-link:hover {
+  opacity: 0.55;
+}
+
+
+/* =========================================
+   GOOGLE MAP
+========================================= */
+
+.map-container {
+  width: 100%;
+
+  height: 420px;
+
+  overflow: hidden;
+
+  background: #d9d3c7;
+}
+
+.map-container iframe {
+  display: block;
+
+  width: 100%;
+
+  height: 100%;
+
+  border: 0;
+}
+
+
+/* =========================================
+   BOTTOM CTA
+========================================= */
+
+.contact-cta {
+  text-align: center;
+
+  padding: 125px 8%;
+
+  background: #fff;
+}
+
+.contact-cta h2 {
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(42px, 5vw, 65px);
+
+  font-weight: 400;
+
+  line-height: 1.1;
+
+  color: #222;
+
+  margin: 0 0 45px;
+}
+
+.contact-book-btn {
+  display: inline-block;
+
+  padding: 17px 34px;
+
+  background: #222;
+
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 12px;
+
+  letter-spacing: 1px;
+
+  transition: background 0.25s ease;
+}
+
+.contact-book-btn:hover {
+  background: #555;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.site-footer {
+  background: #222;
+
+  color: white;
+
+  padding: 65px 8%;
+
+  text-align: center;
+}
+
+.footer-logo h2 {
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 32px;
+
+  font-weight: 400;
+
+  margin: 0;
+}
+
+.footer-logo span {
+  display: block;
+
+  font-size: 9px;
+
+  letter-spacing: 4px;
+
+  margin-top: 6px;
+
+  margin-bottom: 30px;
+
+  color: #bbb;
+}
+
+.site-footer p {
+  color: #aaa;
+
+  font-size: 12px;
+
+  line-height: 1.6;
+
+  margin: 7px 0;
+}
+
+.site-footer .copyright {
+  margin-top: 25px;
+
+  color: #777;
+}
+
+
+/* =========================================
+   TABLET / MOBILE
+========================================= */
+
+@media (max-width: 900px) {
+
+  .contact-section {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+
+    padding: 80px 7%;
+  }
+
+  .location-section {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+
+    padding: 80px 7%;
+  }
+
+  .map-container {
+    height: 350px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .contact-hero {
+    padding: 90px 7% 75px;
+  }
+
+  .contact-hero h2 {
+    font-size: 48px;
+  }
+
+  .contact-hero-text {
+    font-size: 15px;
+  }
+
+
+  /* CONTACT */
+
+  .contact-info h2 {
+    font-size: 40px;
+  }
+
+  .contact-item p {
+    font-size: 16px;
+  }
+
+  .contact-buttons {
+    flex-direction: column;
+  }
+
+  .contact-btn {
+    width: 100%;
+
+    text-align: center;
+
+    box-sizing: border-box;
+  }
+
+
+  /* DARK CARD */
+
+  .contact-card {
+    padding: 50px 35px;
+  }
+
+  .contact-card h3 {
+    font-size: 35px;
+  }
+
+  .contact-phone {
+    font-size: 23px;
+  }
+
+
+  /* LOCATION */
+
+  .location-info h2 {
+    font-size: 39px;
+  }
+
+  .map-container {
+    height: 300px;
+  }
+
+
+  /* CTA */
+
+  .contact-cta {
+    padding: 90px 7%;
+  }
+
+  .contact-cta h2 {
+    font-size: 42px;
+  }
+
+}
+
+/* =========================================
+   PARKING
+========================================= */
+
+.parking-section {
+  padding: 110px 8%;
+  background: #f7f4ee;
+}
+
+
+/* HEADING */
+
+.parking-heading {
+  max-width: 680px;
+  margin-bottom: 55px;
+}
+
+.parking-heading h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 48px;
+  font-weight: 400;
+  color: #222;
+  margin: 10px 0 25px;
+}
+
+.parking-heading > p:last-child {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.8;
+}
+
+
+/* GRID */
+
+.parking-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 25px;
+}
+
+
+/* PARKING CARD */
+
+.parking-card {
+  position: relative;
+
+  background: #fff;
+
+  padding: 45px 40px;
+
+  border: 1px solid #e3ded5;
+}
+
+.parking-number {
+  display: block;
+
+  font-family: Georgia, serif;
+
+  font-size: 13px;
+
+  color: #999;
+}
+
+.parking-card h3 {
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 29px;
+
+  font-weight: 400;
+
+  line-height: 1.25;
+
+  color: #222;
+
+  margin: 30px 0 15px;
+}
+
+.parking-location {
+  color: #666;
+
+  line-height: 1.7;
+
+  font-size: 14px;
+}
+
+
+/* STREET PARKING */
+
+.parking-price {
+  font-family: Georgia, serif;
+
+  font-size: 23px;
+
+  color: #222;
+
+  margin: 30px 0 15px;
+}
+
+.parking-card > p {
+  color: #666;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+}
+
+.parking-small-note {
+  margin-top: 25px;
+
+  color: #999 !important;
+
+  font-size: 12px !important;
+}
+
+
+/* =========================================
+   FEATURED GARAGE
+========================================= */
+
+.featured-parking {
+  background: #292925;
+
+  color: #fff;
+
+  border: none;
+}
+
+.featured-parking .parking-number {
+  color: #888;
+}
+
+.featured-parking h3 {
+  color: #fff;
+}
+
+.featured-parking .parking-location {
+  color: #bbb;
+}
+
+
+/* FREE SUNDAY BADGE */
+
+.free-parking-badge {
+  position: absolute;
+
+  top: 30px;
+
+  right: 30px;
+
+  padding: 9px 14px;
+
+  background: #eee9df;
+
+  color: #222;
+
+  font-size: 10px;
+
+  letter-spacing: 1.5px;
+}
+
+
+/* PRICE */
+
+.garage-rate {
+  display: flex;
+
+  align-items: baseline;
+
+  gap: 7px;
+
+  margin: 35px 0 30px;
+}
+
+.garage-price {
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 50px;
+
+  color: #fff;
+}
+
+.garage-unit {
+  color: #aaa;
+
+  font-size: 14px;
+}
+
+
+/* DETAILS */
+
+.parking-details {
+  border-top: 1px solid #4a4a46;
+
+  margin-bottom: 30px;
+}
+
+.parking-detail-row {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 20px;
+
+  padding: 16px 0;
+
+  border-bottom: 1px solid #4a4a46;
+}
+
+.parking-detail-row span {
+  font-size: 10px;
+
+  letter-spacing: 1.5px;
+
+  color: #999;
+}
+
+.parking-detail-row strong {
+  font-size: 12px;
+
+  font-weight: 400;
+
+  color: #eee;
+}
+
+
+/* SUNDAY ROW */
+
+.sunday-row strong {
+  color: #fff;
+
+  font-weight: 600;
+
+  letter-spacing: 0.5px;
+}
+
+
+/* GARAGE DESCRIPTION */
+
+.featured-parking .garage-description {
+  color: #aaa;
+
+  font-size: 13px;
+
+  line-height: 1.8;
+
+  margin-top: 25px;
+}
+
+
+/* DIRECTIONS */
+
+.parking-link {
+  display: inline-block;
+
+  margin-top: 20px;
+
+  color: #fff;
+
+  text-decoration: none;
+
+  border-bottom: 1px solid #888;
+
+  padding-bottom: 5px;
+
+  font-size: 12px;
+
+  letter-spacing: 0.5px;
+
+  transition: opacity 0.2s ease;
+}
+
+.parking-link:hover {
+  opacity: 0.6;
+}
+
+
+/* =========================================
+   SUNDAY FREE PARKING BANNER
+========================================= */
+
+.sunday-parking-banner {
+  margin-top: 25px;
+
+  padding: 40px 45px;
+
+  background: #eee9df;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 30px;
+}
+
+.sunday-small {
+  display: block;
+
+  font-size: 10px;
+
+  letter-spacing: 2px;
+
+  color: #777;
+
+  margin-bottom: 12px;
+}
+
+.sunday-parking-banner h3 {
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 28px;
+
+  font-weight: 400;
+
+  color: #222;
+
+  margin: 0;
+}
+
+.sunday-parking-banner a {
+  flex-shrink: 0;
+
+  color: #222;
+
+  text-decoration: none;
+
+  border-bottom: 1px solid #222;
+
+  padding-bottom: 5px;
+
+  font-size: 12px;
+}
+
+
+/* DISCLAIMER */
+
+.parking-note {
+  margin-top: 25px;
+
+  color: #999;
+
+  font-size: 10px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   PARKING MOBILE
+========================================= */
+
+@media (max-width: 750px) {
+
+  .parking-section {
+    padding: 80px 7%;
+  }
+
+  .parking-heading h2 {
+    font-size: 39px;
+  }
+
+  .parking-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .parking-card {
+    padding: 35px 30px;
+  }
+
+  .free-parking-badge {
+    top: 25px;
+    right: 25px;
+  }
+
+  .garage-price {
+    font-size: 43px;
+  }
+
+  .parking-detail-row {
+    align-items: flex-start;
+  }
+
+  .parking-detail-row strong {
+    text-align: right;
+  }
+
+  .sunday-parking-banner {
+    padding: 30px;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .sunday-parking-banner h3 {
+    font-size: 24px;
+  }
+
+}
